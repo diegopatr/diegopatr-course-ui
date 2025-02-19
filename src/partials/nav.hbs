@@ -1,0 +1,11 @@
+<div class="nav-container"{{#if page.component}} data-component="{{page.component.name}}" data-version="{{page.version}}"{{/if}}>
+  <aside class="nav">
+    <div class="panels">
+      {{> nav-menu}}
+
+      {{#unless (eq page.attributes.hide-nav-explore true)}}
+        {{> nav-explore}}
+      {{/unless}}
+    </div>
+  </aside>
+</div>
